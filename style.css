@@ -26,7 +26,7 @@
 }
 
 body {
-  margin: 0%;
+  color: var(--color-3);
 }
 
 .mainNav {
@@ -34,7 +34,7 @@ body {
   overflow: hidden;
   align-items: center;
   height: 5.5rem;
-  font-family: "Domine", serif;
+  font-family: var(--f-domine);
 }
 header {
   background-color: #1a1a1a;
@@ -105,4 +105,83 @@ h1 {
   gap: 10%;
   z-index: 2;
   position: relative;
+}
+
+/* Breadcrumbs */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumbs li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--color-2);
+  padding-left: 0.5rem;
+}
+
+.breadcrumbs {
+  font-family: var(--f-sora);
+  margin: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li::after {
+  content: "/";
+  color: var(--color-1);
+  padding-left: 6px;
+}
+
+li:last-child::after {
+  content: "";
+}
+
+li:last-child {
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-accent);
+}
+
+/* footer */
+
+footer {
+  font-family: var(--f-sora);
+  background-color: var(--color-2);
+  padding: 2rem;
+}
+
+footer a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--color-4);
+}
+
+footer p {
+  padding: 0.5rem;
+}
+
+.bedgsm {
+  font-style: italic;
+}
+
+.f_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
