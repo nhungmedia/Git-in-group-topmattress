@@ -3,7 +3,7 @@
 
 // const query = urlParams.get("category");
 const options = {
-  header: { "x-apikey": "620cd6d634fd62156585865c" },
+  headers: { "x-apikey": "620cd6d634fd62156585865c" },
 };
 const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20";
 // const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20" + query;
@@ -11,20 +11,20 @@ const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20";
 fetch(url, options)
   .then((response) => {
     if (!response.ok) {
-        throw Error(response.statusText);
+      throw Error(response.statusText);
     }
     return response.json();
-})
-.then((data) => {
+  })
+  .then((data) => {
     showProductlist(data);
-})
-.catch((e) => {
+  })
+  .catch((e) => {
     console.error("An error occured:", e.message);
-});
+  });
 
 function showProductlist(bedfashion) {
-    bedfashion.forEach((bed) => {
-      console.log(bed);
+  bedfashion.forEach((bed) => {
+    console.log(bed);
   });
 }
 
