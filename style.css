@@ -144,15 +144,23 @@ hr {
 }
 
 .hero {
-  background-image: url(/img/COLOURBOX52849013.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 75vh;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+  height: 75vh;
+}
+
+.heroimg {
+  background-image: url(/img/COLOURBOX52849013.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -4;
 }
 
 .heroh1 {
@@ -189,9 +197,11 @@ a {
 .breadcrumbs {
   font-family: var(--f-sora);
   margin: 2rem;
-  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+  /*  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; */
 }
 
 li::after {
@@ -246,7 +256,7 @@ footer p {
 
 /* button */
 
-.button {
+/* .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,6 +286,54 @@ footer p {
   height: calc(100% - 6px);
   left: 0;
   bottom: 0;
+  transition: transform 0.3s ease;
+}
+
+.btn::before {
+  transform: translate(-5px, -5px);
+}
+
+.btn::after {
+  transform: translate(5px, 5px);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  transform: translate(0px, 0px);
+  background-color: var(--color-accent);
+} */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.btn {
+  font-family: var(--f-sora);
+  font-weight: 700;
+  color: #6b705c;
+  position: relative;
+  padding: 30px 60px;
+  background-color: transparent;
+  /*z-index: 1*/
+}
+
+.btn:hover {
+  color: var(--color-4);
+}
+
+.btn::before,
+.btn::after {
+  border: 3px solid var(--color-accent);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
   transition: transform 0.3s ease;
 }
 
