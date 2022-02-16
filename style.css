@@ -263,6 +263,10 @@ footer p {
   background-color: transparent;
 }
 
+.btn:hover {
+  color: white;
+}
+
 .btn::before,
 .btn::after {
   border: 3px solid var(--color-accent);
@@ -272,7 +276,6 @@ footer p {
   height: calc(100% - 6px);
   left: 0;
   bottom: 0;
-  z-index: 1;
   transition: transform 0.3s ease;
 }
 
@@ -335,7 +338,7 @@ img {
 .categoryList a.button {
   height: 10vh;
 }
-.categoryList a:hover {
+.categoryList .b:hover {
   background-color: var(--color-1);
 }
 
