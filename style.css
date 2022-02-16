@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   border: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -26,7 +27,7 @@
 }
 
 body {
-  margin: 0%;
+  color: var(--color-3);
 }
 
 .mainNav {
@@ -34,7 +35,7 @@ body {
   overflow: hidden;
   align-items: center;
   height: 5.5rem;
-  font-family: "Domine", serif;
+  font-family: var(--f-domine);
 }
 header {
   background-color: var(--color-1);
@@ -103,6 +104,7 @@ h1 {
   z-index: 2;
   position: relative;
 }
+
 .burger_category {
   width: 50vw;
   height: 7vh;
@@ -158,3 +160,127 @@ hr {
   color: var(--color-4);
 }
 
+/* Breadcrumbs */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.breadcrumbs li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--color-2);
+  padding-left: 0.5rem;
+}
+
+.breadcrumbs {
+  font-family: var(--f-sora);
+  margin: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+li::after {
+  content: "/";
+  color: var(--color-1);
+  padding-left: 6px;
+}
+
+li:last-child::after {
+  content: "";
+}
+
+li:last-child {
+  color: var(--color-1);
+  font-weight: 700;
+}
+
+.breadcrumbs a:hover {
+  color: var(--color-accent);
+}
+
+/* footer */
+
+footer {
+  font-family: var(--f-sora);
+  background-color: var(--color-2);
+  padding: 2rem;
+}
+
+footer a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: var(--color-4);
+}
+
+footer p {
+  padding: 0.5rem;
+}
+
+.bedgsm {
+  font-style: italic;
+}
+
+.f_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* button */
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 2;
+}
+
+.btn {
+  font-family: var(--f-sora);
+  font-weight: 700;
+  color: #6b705c;
+  position: relative;
+  padding: 30px 60px;
+  background-color: transparent;
+}
+
+.btn::before,
+.btn::after {
+  border: 3px solid var(--color-accent);
+  content: "";
+  position: absolute;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.btn::before {
+  transform: translate(-5px, -5px);
+}
+
+.btn::after {
+  transform: translate(5px, 5px);
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  transform: translate(0px, 0px);
+  background-color: var(--color-accent);
+}
