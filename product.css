@@ -9,8 +9,7 @@ main {
 .threeProductGrid {
     display: grid;
    grid-template-columns: 1fr 1fr 1fr;
-   gap: 4vw;
-   
+   gap: 4vw;   
 }
 
 @media screen and (min-width: 1000px) {
