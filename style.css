@@ -112,17 +112,7 @@ h1 {
 .hidden {
   visibility: hidden;
 }
-#burger_1 {
-  background-image: url(burger.svg);
-  width: 100vw;
-  height: 7vh;
-  background-repeat: no-repeat;
-  margin-left: 4vw;
-  display: grid;
-  gap: 10%;
-  z-index: 2;
-  position: relative;
-}
+
 #burger_1 div {
   display: grid;
   gap: 10%;
@@ -135,7 +125,7 @@ h1 {
   top: 0;
   background-repeat: no-repeat;
   display: grid;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   font-family: var(--f-sora);
   font-style: var(--color-4);
@@ -144,20 +134,29 @@ h1 {
   color: var(--color-4);
   text-decoration: none;
 }
-
-#burger_2 {
-  background-color: #6b705c;
+#burger_1 {
   background-image: url(burger.svg);
-  height: 7vh;
+  width: 3rem;
+  height: 2.6rem;
   background-repeat: no-repeat;
-  margin-top: 2.7vh;
   margin-left: 4vw;
-  margin-right: 4vw;
   display: grid;
-  z-index: 2;
+  gap: 10%;
+  z-index: 5;
   position: relative;
 }
-
+#burger_2 {
+  background-image: url(burger_cross.svg);
+  width: 3rem;
+  height: 2.6rem;
+  background-repeat: no-repeat;
+  margin-top: 1.45rem;
+  margin-left: 4.2vw;
+  margin-right: 4rem;
+  display: grid;
+  z-index: 5;
+  position: relative;
+}
 .burger_category {
   width: 50vw;
   height: 7vh;
@@ -165,7 +164,7 @@ h1 {
   margin-left: 20vw;
   margin-right: 10vw;
   display: grid;
-  z-index: 2;
+  z-index: 5;
   top: 50vh;
   position: absolute;
   align-items: center;
