@@ -95,7 +95,6 @@ h1 {
 #burger_2 {
   background-color: #6b705c;
   background-image: url(burger.svg);
-  width: 100vw;
   height: 7vh;
   background-repeat: no-repeat;
   margin-top: 2.7vh;
@@ -342,7 +341,7 @@ img {
   background-color: var(--color-5);
   color: var(--color-1);
   font-family: var(--f-sora);
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 1rem 2rem;
   margin: 2rem 0;
   justify-content: space-between;
@@ -350,11 +349,11 @@ img {
 #filter p {
   cursor: pointer;
 }
-.heart{
+.heart {
   content: url(/img/heart.svg);
   display: inline;
-  width: .7rem;
-  height: .7rem;
+  width: 0.7rem;
+  height: 0.7rem;
 }
 .heart:hover {
   content: url(/img/heart2.svg);
@@ -367,10 +366,10 @@ img {
 }
 #productlistGrid {
   display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
-    margin: 2rem;
-    font-family: var(--f-sora);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+  font-family: var(--f-sora);
 }
 .arrow {
   width: 10%;
