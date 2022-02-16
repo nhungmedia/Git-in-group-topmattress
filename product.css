@@ -19,11 +19,14 @@
    gap: 4vw; 
    /* margin: 4vh; */
 }
-.threeProductGrid a:hover {
+a.viewItem:hover {
     background-color: var(--color-accent);
+    background-blend-mode: multiply;
+    text-align: center;
 }
 .seeAlso {
-    margin: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 .seeAlsoH {
     
