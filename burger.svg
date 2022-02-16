@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 26.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 41 35" style="enable-background:new 0 0 41 35;" xml:space="preserve">
-<style type="text/css">
-	.st0{display:none;}
-	.st1{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:5;}
-</style>
-<g id="Layer_2" class="st0">
-</g>
-<g id="Layer_1">
-	<g id="Group_1">
-		<line id="Line_3" class="st1" x1="0" y1="2.5" x2="41" y2="2.5"/>
-		<line id="Line_4" class="st1" x1="0" y1="17.5" x2="41" y2="17.5"/>
-		<line id="Line_5" class="st1" x1="0" y1="32.5" x2="41" y2="32.5"/>
-	</g>
-</g>
-</svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41.07 34.9"><defs><style>.cls-1,.cls-2{fill:none;stroke-width:5px;}.cls-1{stroke:aqua;}.cls-2{stroke:#fff;}</style></defs><g id="Layer_1-2" data-name="Layer 1"><path id="Line_3" data-name="Line 3" class="cls-1" d="M41,0" transform="translate(0.03 -0.05)"/><path id="Line_3-2" data-name="Line 3" class="cls-1" d="M0,0" transform="translate(0.03 -0.05)"/><line id="Line_4" data-name="Line 4" class="cls-2" x1="41.03" y1="32.4" x2="0.03" y2="32.4"/><path id="Line_5" data-name="Line 5" class="cls-1" d="M41,30" transform="translate(0.03 -0.05)"/><path id="Line_5-2" data-name="Line 5" class="cls-1" d="M0,30" transform="translate(0.03 -0.05)"/></g><line id="Line_4-2" data-name="Line 4" class="cls-2" x1="41" y1="17.45" y2="17.45"/><line id="Line_4-3" data-name="Line 4" class="cls-2" x1="41.07" y1="2.5" x2="0.07" y2="2.5"/></svg>
