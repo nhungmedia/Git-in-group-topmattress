@@ -76,10 +76,10 @@ h3 {
 h4 {
   font-family: var(--f-domine);
 }
-p {
+.productp {
   margin-bottom: 1.563rem;
 }
-p > *:last-child {
+.productp > *:last-child {
   margin-bottom: 0;
 }
 .mainNav {
