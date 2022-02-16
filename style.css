@@ -59,6 +59,9 @@ h1 {
 .hidden {
   visibility: hidden;
 }
+
+/* burger menu */
+
 #burger_1 {
   background-image: url(burger.svg);
   width: 100vw;
@@ -123,6 +126,8 @@ hr {
   margin-bottom: 10vh;
   margin-top: 1vh;
 }
+
+/* home page */
 .main_page {
   background-color: #6b705c;
   background-image: url(main_page.png);
@@ -284,10 +289,9 @@ footer p {
   transform: translate(0px, 0px);
   background-color: var(--color-accent);
 }
+
 /* CATEGORY PAGE */
-body.categorypage {
-  background-color: var(--color-2);
-}
+
 .categoryList {
   display: flex;
   flex-direction: column;
@@ -299,7 +303,7 @@ a {
   color: var(--color-4);
   font-family: var(--f-sora);
 }
-.categoryList a {
+.categoryList .b {
   background-repeat: no-repeat;
   background-position: center;
   height: 30vh;
@@ -308,7 +312,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-1);
+  background-color: var(--color-2);
   background-blend-mode: multiply;
   text-transform: uppercase;
 }
@@ -332,7 +336,7 @@ img {
   height: 10vh;
 }
 .categoryList a:hover {
-  background-color: #1a1a1a;
+  background-color: var(--color-1);
 }
 
 /* PRODUCTLIST */
