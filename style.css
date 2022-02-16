@@ -135,3 +135,26 @@ hr {
   font-family: var(--f-sora);
   color: var(--color-4);
 }
+
+.hero {
+  background-image: url(/img/COLOURBOX52849013.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heroh1 {
+  color: var(--color-4);
+  font-size: 2rem;
+}
+.HPbutton {
+  padding: 1.5rem;
+  background-color: var(--color-accent);
+  color: var(--color-4);
+}
+
