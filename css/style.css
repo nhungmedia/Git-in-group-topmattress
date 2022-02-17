@@ -194,7 +194,7 @@ hr {
 /* home page */
 .main_page {
   background-color: #6b705c;
-  background-image: url(main_page.png);
+  background-image: url(../img/main_page.png);
   height: 70vh;
   background-repeat: no-repeat;
   position: relative;
@@ -216,7 +216,7 @@ hr {
   height: 75vh;
 }
 .heroimg {
-  background-image: url(/img/COLOURBOX52849013-2.jpg);
+  background-image: url(../img/COLOURBOX52849013-2.jpg);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -391,16 +391,16 @@ a {
   text-transform: uppercase;
 }
 .a1 {
-  background-image: url(/img/bruce-mars-wBuPCQiweuA-unsplash.jpg);
+  background-image: url(../img/bruce-mars-wBuPCQiweuA-unsplash.jpg);
 }
 .a2 {
-  background-image: url(/img/francesca-tosolini-HD7QBx2Yfa4-unsplash.jpg);
+  background-image: url(../img/francesca-tosolini-HD7QBx2Yfa4-unsplash.jpg);
 }
 .a3 {
-  background-image: url(/img/stephen-andrews-Fcx9U6omt5k-unsplash.jpg);
+  background-image: url(../img/stephen-andrews-Fcx9U6omt5k-unsplash.jpg);
 }
 .a4 {
-  background-image: url(/img/nathan-oakley-kfIN3cGA5xE-unsplash.jpg);
+  background-image: url(../img/nathan-oakley-kfIN3cGA5xE-unsplash.jpg);
 }
 img {
   max-width: 100%;
@@ -428,13 +428,13 @@ img {
   cursor: pointer;
 }
 .heart {
-  content: url(/img/heart.svg);
+  content: url(../img/heart.svg);
   display: inline;
   width: 0.7rem;
   height: 0.7rem;
 }
 .heart:hover {
-  content: url(/img/heart2.svg);
+  content: url(../img/heart2.svg);
 }
 #filter p:hover {
   font-weight: 800;
@@ -462,7 +462,7 @@ img {
   position: relative;
 }
 .favourite {
-  background-image: url(/img/like.svg);
+  background-image: url(../img/like.svg);
   background-repeat: no-repeat;
   width: 15%;
   aspect-ratio: 1/1;
@@ -471,7 +471,7 @@ img {
   right: 5%;
 }
 .arrow {
-  background-image: url(/img/arrow.svg);
+  background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   width: 15%;
   aspect-ratio: 1/1;
