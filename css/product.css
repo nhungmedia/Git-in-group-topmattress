@@ -9,6 +9,8 @@
 }
 .productText h3 {
     text-transform: uppercase;
+    margin-top: -1rem;
+    padding-top: 1.8rem;
 }
 .productText {
     display: block;
