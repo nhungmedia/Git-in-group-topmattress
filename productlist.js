@@ -5,7 +5,7 @@
 const options = {
   headers: { "x-apikey": "620cd6d634fd62156585865c" },
 };
-const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20";
+const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion";
 // const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20" + query;
 
 fetch(url, options)
@@ -16,6 +16,7 @@ fetch(url, options)
     return response.json();
   })
   .then((data) => {
+    console.log(data);
     showProductlist(data);
   })
   .catch((e) => {
@@ -23,9 +24,37 @@ fetch(url, options)
   });
 
 function showProductlist(bedfashion) {
-  bedfashion.forEach((bed) => {
-    console.log(bed);
-  });
+  bedfashion.forEach(showProduct);
+}
+
+function showProduct(product) {
+  console.log(product);
+  // grab the template\
+  const template = document.querySelector("#test123").content;
+  // clone the template
+  const copy = template.cloneNode(true);
+  // change content
+
+  // copy
+  //   .querySelector(".item_productlist > a")
+  //   .setAttribute("href", `product.html?id=${product.id}`);
+
+  copy.querySelector(".description h3").textContent = product.name;
+  copy.querySelector(".description .price").textContent =
+    "DKK " + product.price + ",-";
+
+  copy.querySelector(
+    ".smallProduct img"
+  ).src = `http://hubkur.dk/images_mattress/${product._id}.jpg`;
+
+  if (product.favourite == true) {
+    copy.querySelector(".favourite").classList.remove("hidden");
+  }
+
+  // grab parent
+  const parent = document.querySelector("#productlistGrid");
+  // append
+  parent.appendChild(copy);
 }
 
 // function showProduct(product) {
@@ -67,3 +96,20 @@ function showProductlist(bedfashion) {
 //   // append
 //   parent.appendChild(copy);
 // }
+
+//      button           button             button
+window.addEventListener("load", start_screen);
+
+function start_screen() {
+  document.querySelector("#burger_1").addEventListener("click", open_menu);
+  document.querySelector("#burgerMenu2").addEventListener("click", close_menu);
+}
+
+function open_menu() {
+  document.querySelector("#burgerMenu2").classList.remove("hidden");
+}
+function close_menu() {
+  document.querySelector("#burgerMenu2").classList.add("hidden");
+}
+
+//      button           button             button
