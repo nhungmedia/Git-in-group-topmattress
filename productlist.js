@@ -44,7 +44,7 @@ function showProduct(product) {
   // copy
   //   .querySelector(".item_productlist > a")
   //   .setAttribute("href", `product.html?id=${product.id}`);
-  copy.querySelector(" .breadcrumbs .breadcrumb_3").textContent = query;
+  // copy.querySelector(".breadcrumb_3").textContent = query;
   copy.querySelector(".description h3").textContent = product.name;
   copy.querySelector(".description .price").textContent =
     "DKK " + product.price + ",-";
