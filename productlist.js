@@ -1,12 +1,12 @@
 // 620cd6d634fd62156585865c
 // https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20
 
-// const urlParams = new URLSearchParams(window.location.search);
-// const query = urlParams.get("category");
+const urlParams = new URLSearchParams(window.location.search);
+const query = urlParams.get("category");
 const options = {
   headers: { "x-apikey": "620cd6d634fd62156585865c" },
 };
-const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20&q={"category" : {"$in" : ["frame"]}}`;
+const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20&q={"category" : {"$in" : ["${query}"]}}`;
 // const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20" + query;
 
 fetch(url, options)
@@ -18,7 +18,8 @@ fetch(url, options)
   })
   .then((data) => {
     console.log(data);
-    showProduct(data);
+    data.forEach(showProduct);
+    // showProduct(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
@@ -47,7 +48,7 @@ function showProduct(product) {
 
   // copy.querySelector(".breadcrumb_3").textContent = query;
 
-  copy.querySelector(" .breadcrumbs .breadcrumb_3").textContent = `frame`;
+  document.querySelector(" .breadcrumbs .breadcrumb_3").textContent = `frame`;
   copy.querySelector(".description h3").textContent = product.name;
   copy.querySelector(".description .price").textContent =
     "DKK " + product.price + ",-";
