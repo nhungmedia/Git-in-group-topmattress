@@ -6,7 +6,7 @@ const query = urlParams.get("category");
 const options = {
   headers: { "x-apikey": "620cd6d634fd62156585865c" },
 };
-const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=5&category=${query}`;
+const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion?category=` + query;
 // const url = "https://hubemmd-34fa.restdb.io/rest/bed-fashion?max=20" + query;
 
 fetch(url, options)
@@ -25,11 +25,16 @@ fetch(url, options)
   });
 
 function showProductlist(bedfashion) {
-  bedfashion.forEach(showProduct);
+  bedfashion.forEach((el) => checkQuery(el));
+}
+
+function checkQuery(elem) {
+  if (elem.category == query) {
+    showProduct(elem);
+  }
 }
 
 function showProduct(product) {
-  console.log(product);
   // grab the template\
   const template = document.querySelector("#test123").content;
   // clone the template

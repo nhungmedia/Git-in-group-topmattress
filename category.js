@@ -26,36 +26,24 @@ fetch(url, options)
 
 function showProductlist(bedfashion) {
   bedfashion.forEach(showProduct);
+  console.log("no");
 }
 
 function showProduct(product) {
-  console.log(product);
-  // grab the template\
-  const template = document.querySelector("#test123").content;
-  // clone the template
-  const copy = template.cloneNode(true);
-  // change content
+  console.log("yes");
 
-  // copy
-  //   .querySelector(".item_productlist > a")
-  //   .setAttribute("href", `product.html?id=${product.id}`);
-  copy.querySelector(" .breadcrumbs .breadcrumb_3").textContent = query;
-  copy.querySelector(".description h3").textContent = product.name;
-  copy.querySelector(".description .price").textContent =
-    "DKK " + product.price + ",-";
-
-  copy.querySelector(
-    ".smallProduct img"
-  ).src = `http://hubkur.dk/images_mattress/${product._id}.jpg`;
-
-  if (product.favourite == true) {
-    copy.querySelector(".favourite").classList.remove("hidden");
-  }
-
-  // grab parent
-  const parent = document.querySelector("#productlistGrid");
-  // append
-  parent.appendChild(copy);
+  document
+    .querySelector(".a1")
+    .setAttribute("href", `productlist.html?category=frame`);
+  document
+    .querySelector(".a2")
+    .setAttribute("href", `productlist.html?category=frames_&_mattresses`);
+  document
+    .querySelector(".a3")
+    .setAttribute("href", `productlist.html?category=mattresses`);
+  document
+    .querySelector(".a4")
+    .setAttribute("href", `productlist.html?category=accessories`);
 }
 
 //      button           button             button
