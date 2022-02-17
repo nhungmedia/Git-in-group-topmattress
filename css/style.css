@@ -15,6 +15,7 @@
   /* fonts */
   --f-sora: "Sora", Arial, Helvetica, sans-serif;
   --f-domine: "Domine", Georgia, "Times New Roman", Times, serif;
+  /* font sizes */
 
   /* colors */
 
@@ -75,10 +76,10 @@ h3 {
 h4 {
   font-family: var(--f-domine);
 }
-.productp {
+p {
   margin-bottom: 1.563rem;
 }
-.productp > *:last-child {
+p > *:last-child {
   margin-bottom: 0;
 }
 .mainNav {
@@ -113,7 +114,7 @@ h1 {
 /* burger menu */
 
 #burger_1 {
-  background-image: url(../burger.svg);
+  background-image: url(../img/burger.svg);
   width: 100vw;
   height: 7vh;
   background-repeat: no-repeat;
@@ -145,7 +146,7 @@ h1 {
   text-decoration: none;
 }
 #burger_1 {
-  background-image: url(../burger.svg);
+  background-image: url(../img/burger.svg);
   width: 3rem;
   height: 2.6rem;
   background-repeat: no-repeat;
@@ -156,7 +157,7 @@ h1 {
   position: relative;
 }
 #burger_2 {
-  background-image: url(../burger_cross.svg);
+  background-image: url(../img/burger_cross.svg);
   width: 3rem;
   height: 2.6rem;
   background-repeat: no-repeat;
@@ -189,7 +190,7 @@ hr {
 /* home page */
 .main_page {
   background-color: #6b705c;
-  background-image: url(../main_page.png);
+  background-image: url(main_page.png);
   height: 70vh;
   background-repeat: no-repeat;
   position: relative;
@@ -211,7 +212,7 @@ hr {
   height: 75vh;
 }
 .heroimg {
-  background-image: url(/img/COLOURBOX52849013-2.jpg);
+  background-image: url(/img/COLOURBOX52849013.jpg);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -257,6 +258,9 @@ a {
   margin: 2rem;
   display: flex;
   flex-wrap: wrap;
+  /*  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }
 
 li::after {
@@ -308,8 +312,6 @@ footer p {
   flex-direction: row;
   justify-content: space-around;
 }
-
-/* BUTTON */
 .button {
   display: flex;
   align-items: center;
@@ -320,17 +322,12 @@ footer p {
 .btn {
   font-family: var(--f-sora);
   font-weight: 700;
-  color: var(--color-1);
+  color: #6b705c;
   position: relative;
   padding: 30px 60px;
   background-color: transparent;
   /*z-index: 1*/
 }
-
-/* .pbutton {
-  background-color: #8c425d;
-  padding: 5px;
-} */
 
 .btn:hover {
   color: var(--color-4);
