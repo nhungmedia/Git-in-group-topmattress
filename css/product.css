@@ -7,6 +7,9 @@
     margin: 4vw;
    
 }
+.productText h3 {
+    text-transform: uppercase;
+}
 .productText {
     display: block;
     margin-left: auto;
@@ -23,6 +26,9 @@ a.viewItem:hover {
     background-color: var(--color-accent);
     background-blend-mode: multiply;
     text-align: center;
+}
+.threeProductGrid p {
+    padding-top: 1rem;
 }
 .seeAlso {
     margin-left: 5vw;
@@ -62,7 +68,7 @@ a.viewItem:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: auto;
+  max-width: 600px;
     
 }
 }
