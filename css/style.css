@@ -211,7 +211,7 @@ hr {
   height: 75vh;
 }
 .heroimg {
-  background-image: url(/img/COLOURBOX52849013.jpg);
+  background-image: url(/img/COLOURBOX52849013-2.jpg);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
@@ -308,6 +308,8 @@ footer p {
   flex-direction: row;
   justify-content: space-around;
 }
+
+/* BUTTON */
 .button {
   display: flex;
   align-items: center;
@@ -318,12 +320,17 @@ footer p {
 .btn {
   font-family: var(--f-sora);
   font-weight: 700;
-  color: #6b705c;
+  color: var(--color-1);
   position: relative;
   padding: 30px 60px;
   background-color: transparent;
   /*z-index: 1*/
 }
+
+/* .pbutton {
+  background-color: #8c425d;
+  padding: 5px;
+} */
 
 .btn:hover {
   color: var(--color-4);
