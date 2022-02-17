@@ -34,6 +34,10 @@ fetch(url, options)
 //   }
 // }
 
+function showProductlist(bedfashion) {
+  bedfashion.forEach(showProduct);
+}
+
 function showProduct(product) {
   // grab the template\
   const template = document.querySelector("#test123").content;
@@ -44,7 +48,7 @@ function showProduct(product) {
   // copy
   //   .querySelector(".item_productlist > a")
   //   .setAttribute("href", `product.html?id=${product.id}`);
-  copy.querySelector(" .breadcrumbs .breadcrumb_3").textContent = `frame`;
+  copy.querySelector(" .breadcrumbs .breadcrumb_3").textContent = "Name";
   copy.querySelector(".description h3").textContent = product.name;
   copy.querySelector(".description .price").textContent =
     "DKK " + product.price + ",-";
