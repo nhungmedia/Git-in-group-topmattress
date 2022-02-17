@@ -62,9 +62,6 @@ function showProduct(product) {
   copy
     .querySelector(".arrow")
     .setAttribute("href", `product.html?id=${product._id}`);
-  document
-    .querySelector(".")
-    .setAttribute("href", `category.html?id=${product._id}`);
 
   if (product.favourite == true) {
     copy.querySelector(".favourite").classList.remove("hidden");
