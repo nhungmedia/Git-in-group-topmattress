@@ -76,10 +76,10 @@ h3 {
 h4 {
   font-family: var(--f-domine);
 }
-p {
+.textp {
   margin-bottom: 1.563rem;
 }
-p > *:last-child {
+.textp > *:last-child {
   margin-bottom: 0;
 }
 .mainNav {
@@ -187,6 +187,10 @@ hr {
   margin-top: 1vh;
 }
 
+.brgbtn:hover {
+  font-weight: 700;
+}
+
 /* home page */
 .main_page {
   background-color: #6b705c;
@@ -212,7 +216,7 @@ hr {
   height: 75vh;
 }
 .heroimg {
-  background-image: url(/img/COLOURBOX52849013.jpg);
+  background-image: url(/img/COLOURBOX52849013-2.jpg);
   position: absolute;
   background-repeat: no-repeat;
   background-position: center;
