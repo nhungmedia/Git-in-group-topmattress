@@ -48,7 +48,9 @@ function showProduct(product) {
 
   // copy.querySelector(".breadcrumb_3").textContent = query;
 
-  document.querySelector(" .breadcrumbs .breadcrumb_3").textContent = `frame`;
+  document.querySelector(
+    " .breadcrumbs .breadcrumb_3"
+  ).textContent = `${query}`;
   copy.querySelector(".description h3").textContent = product.name;
   copy.querySelector(".description .price").textContent =
     "DKK " + product.price + ",-";
@@ -56,6 +58,10 @@ function showProduct(product) {
   copy.querySelector(
     ".smallProduct img"
   ).src = `http://hubkur.dk/images_mattress/${product._id}.jpg`;
+
+  copy
+    .querySelector(".arrow")
+    .setAttribute("href", `product.html?id=${product._id}`);
 
   if (product.favourite == true) {
     copy.querySelector(".favourite").classList.remove("hidden");

@@ -34,10 +34,10 @@ function showProduct(product) {
 
   document
     .querySelector(".a1")
-    .setAttribute("href", `productlist.html?category=frame`);
+    .setAttribute("href", `productlist.html?category=frames`);
   document
     .querySelector(".a2")
-    .setAttribute("href", `productlist.html?category=frames_&_mattresses`);
+    .setAttribute("href", `productlist.html?category=frames_and_mattresses`);
   document
     .querySelector(".a3")
     .setAttribute("href", `productlist.html?category=mattresses`);
