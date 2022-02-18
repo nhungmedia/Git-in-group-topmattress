@@ -124,7 +124,7 @@ h1 {
 #burgerMenu2 {
   background-color: var(--color-1);
   width: 100vw;
-  height: 105vh;
+  height: 100.5vh;
   top: 0;
   background-repeat: no-repeat;
   display: grid;
