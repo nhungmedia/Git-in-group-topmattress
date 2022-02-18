@@ -3,72 +3,78 @@
     padding-right: 7vw;
 } */
 .productGrid {
-    display: grid;
-    margin: 4vw;
-   
+  display: grid;
+  margin: 0 1.5rem;
 }
 .productText h3 {
-    text-transform: uppercase;
+  text-transform: uppercase;
+  font-family: var(--f-sora);
+  margin: 0;
+}
+h3.price {
+  font-weight: 500;
 }
 .productText {
-    display: block;
-    margin-left: auto;
-    margin-right: 10vw;
-    width: auto;
-}
-.threeProductGrid {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
-   gap: 4vw; 
-   /* margin: 4vh; */
-}
-a.viewItem:hover {
-    background-color: var(--color-accent);
-    background-blend-mode: multiply;
-    text-align: center;
-}
-.threeProductGrid p {
-    padding-top: 1rem;
-}
-.seeAlso {
-    margin-left: 5vw;
-    margin-right: 5vw;
-}
-.seeAlsoH {
-    
-    text-align: center;
-    
-}
-.slogan p {
-    color: var(--color-accent);
-    font-weight: 500;
-    font-size: 1.5rem;
-    font-style: italic;
-    text-align: center;
-    letter-spacing: 0.1rem;
-
-}
-.textH {
-    color: var(--color-accent);
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-@media screen and (min-width: 1000px) {
-.threeProductGrid {
-    grid-template-columns: 1fr 1fr 1fr;
-
-}
-.productGrid {
-   grid-template-columns: 2fr 1fr;
-  
-}
-
-.productImage {   
   display: block;
   margin-left: auto;
-  margin-right: auto;
-  max-width: 600px;
-    
+  margin-top: 2rem;
+  margin-right: 10vw;
+  width: auto;
 }
+.threeProductGrid {
+  display: grid;
+}
+a.viewItem:hover {
+  background-color: var(--color-accent);
+  background-blend-mode: multiply;
+  text-align: center;
+}
+.threeProductGrid p {
+  padding-top: 1rem;
+}
+.seeAlso {
+  margin: 0 1.5rem;
+  color: var(--color-2);
+}
+.seeAlsoH {
+  text-align: center;
+}
+.slogan p {
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin: 2rem;
+}
+.textH {
+  color: var(--color-accent);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  .productGrid {
+    margin: 0 10rem;
+  }
+  .productText {
+    margin-right: 0;
+}
+}
+
+@media screen and (min-width: 1000px) {
+  .threeProductGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .productGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .productImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
 }

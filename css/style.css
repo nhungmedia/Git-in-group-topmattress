@@ -86,7 +86,6 @@ h4 {
   display: flex;
   overflow: hidden;
   align-items: center;
-  height: 5.5rem;
   font-family: var(--f-domine);
 }
 header {
@@ -97,14 +96,18 @@ header a {
   margin: 0;
 }
 h1 {
-  margin-left: auto;
   font-family: var(--f-domine);
 }
 .home {
   margin-left: auto;
-  margin-right: 10%;
   color: white;
   text-decoration: none;
+}
+
+.home h1 {
+  margin: 0;
+  padding: 1rem;
+  padding-right: 1.5rem;
 }
 
 .hidden {
@@ -113,17 +116,6 @@ h1 {
 
 /* burger menu */
 
-#burger_1 {
-  background-image: url(../img/burger.svg);
-  width: 100vw;
-  height: 7vh;
-  background-repeat: no-repeat;
-  margin-left: 4vw;
-  display: grid;
-  gap: 10%;
-  z-index: 2;
-  position: relative;
-}
 #burger_1 div {
   display: grid;
   gap: 10%;
@@ -132,7 +124,7 @@ h1 {
 #burgerMenu2 {
   background-color: var(--color-1);
   width: 100vw;
-  height: 100vh;
+  height: 105vh;
   top: 0;
   background-repeat: no-repeat;
   display: grid;
@@ -150,29 +142,29 @@ h1 {
   width: 3rem;
   height: 2.6rem;
   background-repeat: no-repeat;
-  margin-left: 4vw;
+  margin-left: 1.5rem;
   display: grid;
   gap: 10%;
   z-index: 5;
   position: relative;
+  cursor: pointer;
 }
 #burger_2 {
   background-image: url(../img/burger_cross.svg);
   width: 3rem;
   height: 2.6rem;
   background-repeat: no-repeat;
-  margin-top: 1.45rem;
-  margin-left: 4.2vw;
-  margin-right: 4rem;
+  margin: 1.5rem;
   display: grid;
   z-index: 5;
   position: relative;
+  cursor: pointer;
 }
 .burger_category {
   width: 50vw;
   height: 7vh;
   background-repeat: no-repeat;
-  margin-left: 20vw;
+  margin-left: 25vw;
   margin-right: 10vw;
   display: grid;
   z-index: 5;
@@ -228,7 +220,7 @@ hr {
 
 .heroh1 {
   color: var(--color-4);
-  font-size: 2rem;
+  font-size: 9vw;
 }
 .HPbutton {
   padding: 1.5rem;
@@ -259,7 +251,7 @@ a {
 
 .breadcrumbs {
   font-family: var(--f-sora);
-  margin: 2rem;
+  margin: 1rem;
   display: flex;
   flex-wrap: wrap;
   /*  white-space: nowrap;
@@ -291,7 +283,9 @@ li:last-child {
 footer {
   font-family: var(--f-sora);
   background-color: var(--color-2);
-  padding: 2rem;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 footer a {
@@ -313,7 +307,7 @@ footer p {
 
 .f_content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 .button {
@@ -370,7 +364,7 @@ footer p {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin: 2rem;
+  margin: 0 1.5rem;
 }
 a {
   text-decoration: none;
@@ -413,16 +407,24 @@ img {
   background-color: var(--color-1);
 }
 
+.category h2 {
+  font-family: var(--f-sora);
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
 /* PRODUCTLIST */
 #filter {
   display: flex;
+  flex-wrap: wrap;
   background-color: var(--color-5);
   color: var(--color-1);
   font-family: var(--f-sora);
   font-size: 0.8rem;
   padding: 1rem 2rem;
-  margin: 2rem 0;
-  justify-content: space-between;
+  margin-bottom: 2rem;
+  justify-content: space-around;
 }
 #filter p {
   cursor: pointer;
@@ -444,19 +446,22 @@ img {
 }
 #productlistGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
-  margin: 2rem;
+  margin: 1.5rem;
   font-family: var(--f-sora);
-}
-.arrow {
-  width: 10%;
-  cursor: pointer;
 }
 .description {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--color-3);
+}
+.description h3 {
+  font-family: var(--f-sora);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 .smallProduct {
   position: relative;
@@ -473,6 +478,54 @@ img {
 .arrow {
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
-  width: 15%;
+  width: 2rem;
   aspect-ratio: 1/1;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .mainNav, .breadcrumbs, .threeProductGrid, #productlistGrid {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  #burger_1 {
+    margin-left: 0;
+  }
+  #burger_2 {
+    margin-left: 3rem;
+  }
+  #burgerMenu2 {
+    margin-left: -3rem;
+  }
+  .f_content {
+    flex-direction: row;
+  }
+  .threeProductGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .hero {
+    height: 81vh;
+  }
+  .heroimg {
+    height: 81vh;
+  }
+  .categoryList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 5rem;
+  }
+  .button {
+    grid-column: 1 / 3;
+    margin-bottom: 1rem;
+  }
+  .categoryList .b {
+    height: 20rem;
+  }
+  .heroh1 {
+    font-size: 5vw;
+  }
 }
